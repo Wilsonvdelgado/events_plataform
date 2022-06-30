@@ -891,6 +891,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"data-fns@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "data-fns@npm:0.1.8"
+  dependencies:
+    unit-fns: ^0.1.6
+  checksum: 152cb22566e3ad1d77625a33bc50ee6c2cce09b644b68f0e44209f84f3d7adf4f1bf8c7c3f086cd86f8c66fc10ed3360ac8b31a68995fc8e932ca2407603cdba
+  languageName: node
+  linkType: hard
+
+"date-fns@npm:^2.28.0":
+  version: 2.28.0
+  resolution: "date-fns@npm:2.28.0"
+  checksum: a0516b2e4f99b8bffc6cc5193349f185f195398385bdcaf07f17c2c4a24473c99d933eb0018be4142a86a6d46cb0b06be6440ad874f15e795acbedd6fd727a1f
+  languageName: node
+  linkType: hard
+
 "debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.3.3":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
@@ -1229,6 +1245,8 @@ __metadata:
     "@types/react-dom": ^18.0.0
     "@vitejs/plugin-react": ^1.3.0
     autoprefixer: ^10.4.7
+    data-fns: ^0.1.8
+    date-fns: ^2.28.0
     graphql: ^16.5.0
     phosphor-react: ^1.4.1
     postcss: ^8.4.14
@@ -2526,6 +2544,13 @@ __metadata:
   dependencies:
     imurmurhash: ^0.1.4
   checksum: 5b6876a645da08d505dedb970d1571f6cebdf87044cb6b740c8dbb24f0d6e1dc8bdbf46825fd09f994d7cf50760e6f6e063cfa197d51c5902c00a861702eb75a
+  languageName: node
+  linkType: hard
+
+"unit-fns@npm:^0.1.6":
+  version: 0.1.9
+  resolution: "unit-fns@npm:0.1.9"
+  checksum: 71cc495d954e256eadd310db72d70f4864934d0da276c6a44ac32804e81bdcd7afb98e5ee5f4babe947e37bbc378f43450b412eccf70572b009a909d21e5082d
   languageName: node
   linkType: hard
 

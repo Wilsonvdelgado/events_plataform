@@ -1,4 +1,6 @@
 import { CheckCircle, Lock } from "phosphor-react";
+import { format, isPast } from "date-fns";
+import ptBR from "date-fns/esm/locale/pt-BR";
 
 interface LessonProps {
   title: string;
@@ -8,19 +10,24 @@ interface LessonProps {
 }
 
 export function Lesson(props: LessonProps) {
-  const isLessonAvaliable = false;
+  const isLessonAvaliable = isPast(props.avaliableAt);
+  const avaliableAtFormatted = format(
+    props.avaliableAt,
+    "EEEE' • 'd ' de 'MMM' • 'k'h'mm",
+    { locale: ptBR }
+  );
   return (
     <a href="#">
-      <span className="text-gray-200">{props.avaliableAt.toString()}</span>
+      <span className="text-gray-300">{avaliableAtFormatted}</span>
       <div className="rounded border border-gray-500 p-4 mt-2">
         <header className="flex items-center justify-between">
           {isLessonAvaliable ? (
             <span className="text-sm text-blue-500 font-medium flex items-center gap-2">
-              <CheckCircle size={20} className="" /> Conteudo liberado
+              <CheckCircle size={20} /> Conteudo liberado
             </span>
           ) : (
             <span className="text-sm text-orange-500 font-medium flex items-center gap-2">
-              <Lock size={20} className="" /> Em breve
+              <Lock size={20} /> Em breve
             </span>
           )}
           <span className="text-xs rounded px-2 py-[a.125rem] text-white border border-green-300 font-bold">
