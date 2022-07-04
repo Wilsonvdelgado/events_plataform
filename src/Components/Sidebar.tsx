@@ -23,7 +23,7 @@ interface GetLessonsQueryResponse {
   }[];
 }
 
-export function Sideber() {
+export function Sidebar() {
   const { data } = useQuery<GetLessonsQueryResponse>(GET_LESSONS_QUERY);
   console.log("data");
   console.log(data);
@@ -37,6 +37,7 @@ export function Sideber() {
         {data?.lessons.map((lesson) => {
           return (
             <Lesson
+              key={lesson.id}
               title={lesson.title}
               avaliableAt={new Date(lesson.publishedAt)}
               slug={lesson.slug}
