@@ -1,6 +1,6 @@
-import { Header } from "../Components/Header";
-import { Sidebar } from "../Components/Sidebar";
-import { Video } from "../Components/Video";
+import { Header } from "../components/Header";
+import { Sidebar } from "../components/Sidebar";
+import { Video } from "../components/Video";
 import { useParams } from "react-router-dom";
 
 export function Event() {

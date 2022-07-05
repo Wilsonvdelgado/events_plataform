@@ -4,11 +4,9 @@ import { DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
 import "@vime/core/themes/default.css";
 import { gql, useQuery } from "@apollo/client";
 
-const GET_LESSON_QUERY = gql`
-  query GetLesson($slug: String) {
+const GET_LESSON_BY_SLUG_QUERY = gql`
+  query GetLessonBySlug($slug: String) {
     lesson(where: { slug: $slug }) {
-      id
-      slug
       title
       videoId
       description
@@ -39,7 +37,7 @@ interface GetLessonQueryResponse {
 }
 
 export function Video(props: VideoProps) {
-  const { data } = useQuery<GetLessonQueryResponse>(GET_LESSON_QUERY, {
+  const { data } = useQuery<GetLessonQueryResponse>(GET_LESSON_BY_SLUG_QUERY, {
     variables: { slug: props.slug },
   });
 
