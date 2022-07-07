@@ -8,19 +8,19 @@ import { useGetLessonBySlugQuery } from "../graphql/generated";
 interface VideoProps {
   slug: string;
 }
-interface GetLessonQueryResponse {
-  lesson: {
-    id: string;
-    title: string;
-    descritpion: string;
-    slug: string;
-    teacher: {
-      name: string;
-      bio: string;
-      avatarURL: string;
-    };
-  };
-}
+// interface GetLessonQueryResponse {
+//   lesson: {
+//     id: string;
+//     title: string;
+//     descritpion: string;
+//     slug: string;
+//     teacher: {
+//       name: string;
+//       bio: string;
+//       avatarURL: string;
+//     };
+//   };
+// }
 
 export function Video(props: VideoProps) {
   // const { data } = useQuery<GetLessonQueryResponse>(GET_LESSON_BY_SLUG_QUERY, {
