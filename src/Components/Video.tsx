@@ -67,7 +67,7 @@ export function Video(props: VideoProps) {
             <p className="mt-4 text-gray-200 leading-relaxed">
               {data.lesson.description}
             </p>
-            {data.lesson && (
+            {data.lesson.teacher && (
               <div className="flex items-center gap-4 mt-4">
                 <img
                   className="h-16 w-16 rounded-full border-2 border-blue-500"
