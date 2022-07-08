@@ -18,3 +18,6 @@ function App() {
 }
 
 export default App;
+
+// "eslint-import-resolver-typescript": "^3.2.4",
+// "eslint-plugin-import": "^2.26.0",
